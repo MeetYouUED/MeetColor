@@ -19,7 +19,7 @@
 	<h1>Meet-Color</h1>
 
 	<script type="text/javascript">
-	var color = [['Black','Black_A','#323232','换肤变色','#999','#fff'],['Black','Black_AT','#323232','换肤颜色不变','#999','#fff'],['Black','Black_B','#888888','','#999','#000'],['Black','Black_C','#999999','','#999','#000'],['Black','Black_D','#b5b5b5','','#999','#000'],['Black','Black_E','#dddddd','','#999','#000'],['Black','Black_F','#eeeeee','','#999','#000'],['Black','Black_G','#fafafa','引用回复','#999','#000'],['Black','Black_H','#f5f5f5','白色按下','#999','#000'],['Black','Black_I','#e5e5e5','图片未加载','#999','#000'],['White','White_A','#ffffff','换肤颜色不变','#999','#323232'],['White','White_AT','#ffffff','换肤变色','#999','#323232'],['White','White_AN','#ffffff','夜间白色变黑色','#999','#323232'],['Red','Red_A','#ff87a0','','#ff87a0','#fff'],['Red','Red_B','#ff5073','换肤变色','#ff87a0','#fff'],['Red','Red_BT','#ff5073','换肤颜色不变','#ff87a0','#fff'],['Red','Red_C','#f03c5f','','#ff87a0','#fff'],['Red','Red_D','#e63b5c','','#ff87a0','#fff'],['Red','Red_E','#fff1f1','','#ff87a0','#000'],['Red','Red_F','#ffe2ec','','#ff87a0','#000'],['Colour','Colour_A','#377ce4','','#377ce4','#fff'],['Colour','Colour_B','#6aaafa','','#6aaafa','#fff'],['Colour','Colour_C','#ff8c55','','#ff8c55','#fff'],['Colour','Colour_D','#ffa200','','#ffa200','#fff'],['Colour','Colour_E','#c4a27a','','#c4a27a','#fff'],['Colour','Colour_F','#10b524','','#10b524','#fff'],['Colour','Colour_G','#b0d25b','','#b0d25b','#fff'],['Colour','Colour_H','#d099d0','','#d099d0','#fff'],['Colour','Colour_I','#ff5073','','#ff5073','#fff'],['Colour','Colour_J','#ffffff','','#999999','#999999'],['Colour','Colour_K','#fff9f0','','#999999','#999999'],['Colour','Colour_L','#3668b2','','#3668b2','#fff'],['Colour','Colour_M','#ff8400','','#ff8400','#fff'],['Colour','Colour_N','#ff6c00','','#ff6c00','#fff'],['Colour','Colour_O','#fffb00','','#fffb00','#fff'],['Colour','Colour_P','#00c4a6','','#00c4a6','#fff'],['Colour','Colour_Q','#b284e6','','#b284e6','#fff'],]
+	var color = [['Black','Black_A','#323232','换肤变色','#999','#fff'],['Black','Black_AT','#323232','换肤颜色不变','#999','#fff'],['Black','Black_B','#888888','','#999','#000'],['Black','Black_C','#999999','','#999','#000'],['Black','Black_D','#b5b5b5','','#999','#000'],['Black','Black_E','#dddddd','','#999','#000'],['Black','Black_F','#eeeeee','','#999','#000'],['Black','Black_G','#fafafa','引用回复','#999','#000'],['Black','Black_H','#f5f5f5','白色按下','#999','#000'],['Black','Black_I','#e5e5e5','图片未加载','#999','#000'],['White','White_A','#ffffff','换肤颜色不变','#999','#323232'],['White','White_AT','#ffffff','换肤变色','#999','#323232'],['White','White_AN','#ffffff','夜间白色变黑色','#999','#323232'],['Red','Red_A','#ff87a0','','#ff87a0','#fff'],['Red','Red_B','#ff5073','换肤变色','#ff87a0','#fff'],['Red','Red_BT','#ff5073','换肤颜色不变','#ff87a0','#fff'],['Red','Red_C','#f03c5f','','#ff87a0','#fff'],['Red','Red_D','#e63b5c','','#ff87a0','#fff'],['Red','Red_E','#fff1f1','','#ff87a0','#000'],['Red','Red_F','#ffe2ec','','#ff87a0','#000'],['Colour','Colour_A','#377ce4','','#377ce4','#fff'],['Colour','Colour_B','#6aaafa','','#6aaafa','#fff'],['Colour','Colour_C','#ff8c55','','#ff8c55','#fff'],['Colour','Colour_D','#ffa200','','#ffa200','#fff'],['Colour','Colour_E','#c4a27a','','#c4a27a','#fff'],['Colour','Colour_F','#10b524','','#10b524','#fff'],['Colour','Colour_G','#b0d25b','','#b0d25b','#fff'],['Colour','Colour_H','#d099d0','','#d099d0','#fff'],['Colour','Colour_I','#ff5073','','#ff5073','#fff'],['Colour','Colour_J','#ffffff','','#999999','#999999'],['Colour','Colour_K','#fff9f0','','#999999','#999999'],['Colour','Colour_L','#3668b2','','#3668b2','#fff'],['Colour','Colour_M','#ff8400','','#ff8400','#fff'],['Colour','Colour_N','#ff6c00','','#ff6c00','#fff'],['Colour','Colour_O','#fffb00','','#b5b5b5','#b5b5b5'],['Colour','Colour_P','#00c4a6','','#00c4a6','#fff'],['Colour','Colour_Q','#b284e6','','#b284e6','#fff'],]
 
 	var classs = ['Black','White','Red','Colour']
 
@@ -28,13 +28,13 @@
 	document.write(ha1)	
 		for (x in color)
 		{
-			ht = "<div class='col-md-2'><div class='color-box' style='background: " + color[x][2] 
+			ht = "<div class='col-md-1'><div class='color-box' style='background: " + color[x][2] 
 			+"; color: "+color[x][5]
 			+"; border-color: "+color[x][4] + "'> "
 			+ color[x][1]
 			+ "</div><div class='M-text-box'  onmouseout='mouseOut()' style='border-color: " + color[x][4]
 			+ "; color: " + color[x][4] 
-			+ ";' data-clipboard-text=' "+ color[x][2] +"'>"
+			+ ";' data-clipboard-text='"+ color[x][2] +"'>"
 			+ color[x][2]
 			+" </div>" + color[x][3]+"</div>"
 			if (color[x][0]==classs[c]) {
@@ -74,4 +74,3 @@
 
 </body>
 </html>
-
