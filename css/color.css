@@ -1,0 +1,40 @@
+.wrapper {
+	width: 640px;
+	margin: auto;
+}
+
+.color-box {
+	width: 100%;
+	height:80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 18;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid; 
+}
+
+.M-text-box {
+	margin-bottom: 5px;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18;
+	border-width: 0px 1px 1px 1px;
+	border-style: solid; 
+}
+
+.M-text-box:hover {
+	background: #fafafa;
+	cursor: pointer;
+}
+
+.M-text-box:active {
+	background: #e5e5e5;
+}
+
+.col-md-2 {
+	background: #fff;
+	padding: 0px;
+	height: 160px;
+}
