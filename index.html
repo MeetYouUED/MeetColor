@@ -53,7 +53,6 @@
 		    console.info('Action:', e.action);
 		    console.info('Text:', e.text);
 		    console.info('Trigger:', e.trigger);
-		    document.getElementById('title').innerHTML='Copied!'+e.text;
 		    document.getElementById('feedback').innerHTML='<div class="alert alert-success" role="alert">已复制 '+e.text+'</div>';
 		 //获取颜色对应的名称，改变内容作为反馈？
 		 //气泡反馈。
@@ -66,7 +65,6 @@
 		});
 
 		function mouseOut(){
-			document.getElementById('title').innerHTML='Meet color';
 			document.getElementById('feedback').innerHTML='';
 		}
 
